@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
-}
+*{
+                    margin: 0; padding: 0;
+                    box-sizing: border-box;
+                    outline: none;
+                    transition: all 0.3s ease-out;
+                    background: #1c1616;
+                    color: #fff;
+                  }
+                  section{
+                    padding:2rem 9%;
+                  }
+                  
+                  
+    .btn{
+      background: transparent;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-top:-0.2rem;
+      width:6rem;
+      height: 2.5rem;
+      border:0.18rem solid  #edc967;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    .btn:hover{
+      color:  #edc967;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+                  .flexSB{
+                    display: flex;
+                    justify-content: space-between;
+                    background: #1c1616;
+                  }
+                  .start{
+                    padding: 0px 70px;
+                    color: #fff;
+                     
+                   }
+   .start img{
+    margin-left: 1.5rem;
+     width:10rem;
+    height: 6rem;
+   }
+                  /* .navbar{
+                                   box-shadow: 0px 10px 10px rgba(0, 0,0,0.3);
+                  } */
+                     
+   .navbar ul{
+           display: flex;         
+           padding: 40px 6rem;
+   }
+   .navbar li{
+                    margin-right:2rem;
+                    list-style: none;
+                    cursor: pointer;
+                    list-style: none;
+                    text-decoration: none;
+   
+   }
+   .navbar ul li a{
+                     font-size: 1.2rem;
+                     text-decoration: none; 
+                    color:#fff;
+                    font-weight:bold;
+                    transition: 0.5s;
+                    
+   }
+   .navbar ul li a:hover{
+                    color: #edc967;
+   }
+   
+   
+   .toggle{
+     display: none;
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+               
+   @media(max-width:786px) {
+                    .offer_box{
+                      padding:0 6rem;
+                    }
+                .start{
+                    clip-path: none;
+                }    
+                .navbar{
+                    margin: 0;
+                    background-color:#111;
+                    position: relative;
+                    
+                  }
+                .navbar ul.flexSB{
+                    display: none;
+                }
+                .navbar ul li{
+                    margin-bottom: 20px;
+                }
+                .toggle{
+                    display: block;
+                    background-color:transparent;
+                    border: none;
+                    color: #fff;
+                    font-size: 30px;
+                    position: absolute;
+                    right: 50px;
+                    top: 25px;
+                }
+                .mobile-nav{
+                    position: absolute;
+                    top: 11.5vh;
+                    left: 0;
+                    width: 100%;
+                    color: #fff;
+                    background-color:#111;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .btn{
+                     align-self: center;
+                }
+                a{
+                    text-decoration: none;
+                }
+                li{
+                    list-style: none;
+                }
+                button{
+                    border: none;
+                }
+                
+          .home {
+            padding:0rem 2rem;
+          }
+               }
+               
+               @media screen and (min-width:400px)
+                {
+                             .mobile-nav{
+                              position: fixed; 
+                              top: 9vh;
+                            
+                             }
+               }
+                 
+   @media screen and (max-width:350px) {
+    .start{
+      padding: 0px 20px;
+      color: #fff;
+       
+     }
+      
+.navbar ul{
+display: flex;         
+padding: 40px 0rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    
+   }
