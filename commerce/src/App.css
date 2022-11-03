@@ -3,8 +3,8 @@
                     box-sizing: border-box;
                     outline: none;
                     transition: all 0.3s ease-out;
-                    background: #1c1616;
-                    color: #fff;
+                    background:#fff;
+                    color:  #1c1616;
                   }
                   section{
                     padding:2rem 9%;
@@ -14,41 +14,45 @@
     .btn{
       background: transparent;
       font-size: 1.4rem;
-      color: #fff;
+      color: #1c1616;
       margin-top:-0.2rem;
       width:6rem;
       height: 2.5rem;
-      border:0.18rem solid  #edc967;
+      border:0.18rem solid  #b4eb8e;
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.3s ease-out;
     }
     .btn:hover{
-      color:  #edc967;
+      color:  #b4eb8e;
     }
 
+    nav{
+           background: #b4eb8e;
+           width: 100%;
+    }
                   .flexSB{
                     display: flex;
                     justify-content: space-between;
-                    background: #1c1616;
+                    background:#b4eb8e;
                   }
                   .start{
-                    padding: 0px 70px;
-                    color: #fff;
+                    padding: 1rem 2rem;
+                    color: #1c1616;
+                    background: #b4eb8e;
                      
                    }
-   .start img{
-    margin-left: 1.5rem;
-     width:10rem;
-    height: 6rem;
-   }
-                  /* .navbar{
-                                   box-shadow: 0px 10px 10px rgba(0, 0,0,0.3);
-                  } */
-                     
+   .start h1{
+      font-size:2rem; 
+      font-weight: 600;
+      background: #b4eb8e;
+   } 
+   
+                 
    .navbar ul{
            display: flex;         
-           padding: 40px 6rem;
+           padding: 2rem 6rem;
+           background: #b4eb8e;
    }
    .navbar li{
                     margin-right:2rem;
@@ -56,102 +60,214 @@
                     cursor: pointer;
                     list-style: none;
                     text-decoration: none;
-   
+                    background: #b4eb8e;
    }
    .navbar ul li a{
                      font-size: 1.2rem;
                      text-decoration: none; 
-                    color:#fff;
+                    color:#1c1616;
                     font-weight:bold;
                     transition: 0.5s;
+                    background: #b4eb8e;
                     
    }
    .navbar ul li a:hover{
-                    color: #edc967;
+                    color: #fff;
    }
    
-   
-   .toggle{
-     display: none;
+   .contact{
+    display: flex;
+    flex-direction: row;
+    padding:1rem 2rem;
+    background: #b4eb8e;
+   }
+   .contact small{
+    font-size: 1.8rem;
+    /* line-height: 1.8rem; */
+    background: #b4eb8e;
+   }
+   .contact .text{
+    margin-top:0.5rem;
+    margin-left: 1rem;
+    font-size:1rem;
+    color: rgb(170, 170, 170);
+    font-weight: 400;
+    background: #b4eb8e;
+   }
+   .contact .text p{
+    line-height:1.2rem;
+    background: #b4eb8e;
    }
 
-               
-   @media(max-width:786px) {
+   .toggle{
+     display: none;
+     
+   }
+
+   /* Header section */
+
+   .header
+   {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     padding: 1rem 4rem;
+     background:#fff;
+   }
+   .logo{
+    width:12rem;
+    height: 6rem;
+    overflow: hidden;
+    /* border-radius: 10px; */
+   }
+   .logo img{
+    width: 100%;
+    height: 100%;
+   }
+   
+   .header .search-bar,
+   .header .active{
+         padding:0 1.8rem;
+   }
+   .header .search-bar input,.header .active input{
+         width: 250px;
+         height: 2.5rem;
+         font-size: 1.2rem;
+         border:1px solid black;
+   }
+   .header .search-bar .icon-1,
+   .header .active .icon-1
+   {
+            background: #2ba84a;
+            color: white;
+            height: 2.5rem; 
+            width: 60px;
+            margin:-0.9rem -0.3rem;
+   }
+   .icon-2{
+     color: #2ba84a;
+            height: 2.5rem; 
+            width: 60px;
+            margin:-0.9rem -0.3rem;
+            display: none;
+   }
+
+   
+@media screen and (max-width:820px) {
+  .header{
+   padding: 1rem 2rem;                 
+  }
+}
+
+@media screen and (max-width:620px) {
+  .header .search-bar{
+    position: absolute;
+    top: 24%; right:110%;
+    width: 80%;
+    transition: all 0.3s ease;
+  }
+
+  .header .active{
+    position: absolute;
+    top:22%; right:-1rem;
+    width: 100%;
+    padding:2.5rem 2rem;
+  }
+  
+  .header .active input{
+    width: 80%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border:1px solid black;
+  }
+  .header .active .icon-1{
+       background: #2ba84a;
+       color: white;
+       height: 2.5rem; 
+       width: 10%;
+       margin:-0.9rem -0.3rem;
+  }    
+  .icon-2{
+    display: inline-block;
+  }           
+ .header .search-bar input{
+    width: 80%;
+    
+  }
+
+}   
+   @media(max-width:700px) {
                     .offer_box{
                       padding:0 6rem;
                     }
                 .start{
                     clip-path: none;
-                }    
+                }  
                 .navbar{
-                    margin: 0;
-                    background-color:#111;
-                    position: relative;
-                    
-                  }
-                .navbar ul.flexSB{
-                    display: none;
-                }
-                .navbar ul li{
-                    margin-bottom: 20px;
-                }
-                .toggle{
-                    display: block;
-                    background-color:transparent;
-                    border: none;
-                    color: #fff;
-                    font-size: 30px;
-                    position: absolute;
-                    right: 50px;
-                    top: 25px;
-                }
-                .mobile-nav{
-                    position: absolute;
-                    top: 11.5vh;
-                    left: 0;
-                    width: 100%;
-                    color: #fff;
-                    background-color:#111;
-                    flex-direction: column;
-                    text-align: center;
-                }
-                .btn{
-                     align-self: center;
-                }
-                a{
-                    text-decoration: none;
-                }
-                li{
-                    list-style: none;
-                }
-                button{
-                    border: none;
-                }
+                  margin: 0;
+                  background-color: #2ba84a;
+                  position: relative;
+              }
+              .navbar ul.flexSB{
+                  display: none;
+              }
+              .navbar ul li{
+                  margin-bottom: 20px;
+              }
+              .toggle{
+                  display: block;
+                  background-color:#b4eb8e;
+                  border: none;
+                  color: #fff;
+                  font-size: 30px;
+                  position: absolute;
+                  right: 50px;
+                  top: 34px;
+              }
+              .btn_11{
+                background-color:#b4eb8e;
                 
-          .home {
-            padding:0rem 2rem;
-          }
-               }
-               
-               @media screen and (min-width:400px)
-                {
-                             .mobile-nav{
-                              position: fixed; 
-                              top: 9vh;
-                            
-                             }
-               }
-                 
-   @media screen and (max-width:350px) {
-    .start{
-      padding: 0px 20px;
-      color: #fff;
-       
+              }
+              .mobile-nav{
+                  position: absolute;
+                  top: 5rem;
+                  left: 0;
+                  width: 100%;
+                  background-color: #b4eb8e;
+                  flex-direction: column;
+              }
+              a{
+                  text-decoration: none;
+              }
+              li{
+                  list-style: none;
+              }
+              button{
+                  border: none;
+              }
+             
+            .contact{
+                 display: none;
+           }
+           
+        }
+             
+   @media screen and (max-width:310px) {
+    .toggle{
+      right: 30px;
+    }
+    .header{
+      padding: 1rem 1rem;                 
      }
-      
-.navbar ul{
-display: flex;         
-padding: 40px 0rem;
-}
-    
+   }
+
+   @media screen and(max-width:333px) {
+    .header .search-bar{
+      padding:0 1rem;
+    }                
+    .header .search-bar .icon-1{
+      width:40px;
+    }
    }
